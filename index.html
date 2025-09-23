@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my virtual vinyl wall</title>
+  </head>
+  <body>
+    <!-- Top section: Left (vinyl + album) and Right (lyrics) -->
+    <div class="player-main">
+        <!-- left: spinning record player -->
+        <section class="album-container">
+
+            <!--now playing album-->
+            <figcaption>
+                <h1>Now Playing</h1>
+                <h2>Album Name</h2>
+            </figcaption>
+
+            <!--vinyl desc-->
+            <figure class="vinyl">
+                <div class="album-art"></div> <!--album art in center-->
+                <div class="vinyl-shadow"></div> <!-- shadow effect -->
+                <div class="spindle"></div> <!-- Spindle in center -->
+                <div class="tonearm"></div> <!-- Tonearm -->
+                <div class="record-base"></div> <!-- Base of the record -->
+                <div class="record-grooves"></div> <!-- Grooves effect -->
+                <div class="record-label"></div> <!-- Label in center -->
+                <div class="record-highlight"></div> <!-- Highlight effect -->
+            </figure>
+
+            <!--song info-->
+            <figcaption class="song-info">
+                <h2 id="song-title">Song Title</h2> <!-- Song title -->
+                <p id="song-artist">Artist Name</p> <!-- Artist name -->
+                <p id="album-name">Album Name</p> <!-- Album name -->
+                <p>2024</p> <!-- Year -->
+            </figcaption>
+        <!--end of left-->
+        </section>
+
+        <!-- Right: Lyrics -->
+        <div class="lyrics-panel">
+            <h2 id="song-title">Song Title - <span id="song-artist">Artist</span></h2>
+            <p>[00:12] Sample lyric line one...</p>
+            <p>[00:25] Sample lyric line two...</p>
+            <p>[00:38] Sample lyric line three...</p>
+            <p>[00:52] Sample lyric line four...</p>
+            <p>[01:05] Sample lyric line five...</p>
+        </div>
+        </div>
+
+        <!--bottom control bar-->
+        <div class="controls">
+            <div class="buttons">
+                <button>⏯ Play/Pause</button>
+                <button>⏭ Next</button>
+                <button>🔀 Shuffle</button>
+            </div>
+            <div class="progress-bar">
+                <span>1:45</span>
+                <div class="bar">
+                    <div class="fill"></div>
+                </div>
+                <span>3:50</span>
+            </div>
+        </div>
+    </div>
+  </body>
